@@ -1,0 +1,170 @@
+/* Global Styles */
+* {
+  font-weight: 300 !important;
+}
+
+ul > li {
+  cursor: pointer;
+}
+
+p {
+  font-size: 13px !important;
+  opacity: 0.8;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+.ml-100 {
+  margin-left: 5rem !important;
+}
+
+/* Override */
+.navbar {
+  padding: 0.25rem 0 !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-primary {
+  background-color: #588bae !important;
+  border-color: #588bae !important;
+}
+
+.list-group-item {
+  padding: 0 0 10px 0 !important;
+  border: none !important;
+  background-color: inherit !important;
+  font-size: 14px !important;
+  cursor: auto;
+}
+
+/* Banner Image */
+
+.banner {
+  background-image: url("./images/aleks-dorohovich-njdwuhmay8a-unsplash.jpg");
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Header */
+
+ul > li:first-child {
+  padding-right: 5px !important;
+}
+
+.header-bullet::before {
+  height: 3px;
+  width: 3px;
+  background-color: rgb(41, 40, 40);
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.header-bullet {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+
+.bg-light__blue {
+  background-color: #588bae;
+}
+
+/* Main content */
+.expertise__title {
+  opacity: 0.8;
+}
+
+.member__image {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.member__desc {
+  font-size: 12px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.member__info {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+/* Footer */
+.list-group-item > span {
+  width: 85px !important;
+  font-weight: 500 !important;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1190px) {
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    text-align: left;
+  }
+
+  .footer-logo {
+    width: 20% !important;
+  }
+
+  .list-group {
+    text-align: left;
+  }
+  .ml-100 {
+    margin: 0 !important;
+  }
+
+  .list-group-item > span {
+    width: 80px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header-bullet::before {
+    display: none !important;
+  }
+  .header-bullet {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .banner {
+    height: 15rem !important;
+  }
+
+  ul > li:first-child {
+    padding-right: 0 !important;
+  }
+
+  .mt-100 {
+    margin-top: 40px !important;
+  }
+
+  .member {
+    max-width: 100% !important;
+    margin-top: 10px !important;
+  }
+
+  .expertise__title,
+  .footer__title {
+    font-weight: 500 !important;
+    margin-top: 1.5rem !important;
+  }
+}
